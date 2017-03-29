@@ -63,6 +63,8 @@ void power_hint(power_hint_t hint, void *data);
 void set_interactive(int on);
 void set_feature(feature_t feature, int state);
 
+#define UNUSED(x) UNUSED_ ## x __attribute__((__unused__))
+
 #ifdef __cplusplus
 }
 #endif
